@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-cream">
+
+  <section id="product" class="flex h-screen items-center justify-center p-3 relative">
+
+    <div class="bg-white rounded-xl flex flex-col sm:flex-row overflow-hidden">
+      <div class="sm:w-80">
+        <img src="images/image-product-desktop.jpg" alt="" class="sm:inline hidden object-contain w-full h-full">
+        <img src="images/image-product-mobile.jpg" alt="" class="inline sm:hidden">
+      </div>
+      <div class="sm:w-80">
+        <div class="container mx-auto p-6 py-8 space-y-5">
+          <p class="font-montserrat uppercase opacity-50 tracking-widest text-sm">Perfume</p>
+          <h1 class="text-4xl font-fraunces">Gabrielle Essence Eau De Parfum</h1>
+          <p class="opacity-50 font-montserrat pb-10 sm:pb-0">
+            A floral, solar and voluptuous
+            interpretation composed by
+            Olivier Polge, Perfumer-Creator
+            for the House of CHANEL
+          </p>
+          <div class="flex flex-row  items-center">
+            <p class="text-4xl font-fraunces text-darkCyan">$149.99</p>
+            <p class="text-sm opacity-50 mx-6 line-through ">$169.99</p>
+          </div>
+
+          <button class="w-full rounded-xl py-4 bg-darkCyan hover:bg-veryDarkBlue text-white font-montserrat">
+            <div class="flex flex-row items-center justify-center">
+              <img src="images/icon-cart.svg" alt="" class="mr-3">
+                Add To Cart
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  
+</body>
+</html>
